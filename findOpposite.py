@@ -1,4 +1,4 @@
-# Find opposite
+# Find opposite number
 
 def find_opposite(number):
     return -number
