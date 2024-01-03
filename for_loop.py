@@ -44,9 +44,26 @@ for number in range(1,6):
 print("Sum of the squares is: " ,sum_of_squares)
 
 
-
 # Exercise 6: Factorial
+def calculate_factorial(n):
+    if n < 0:
+        return "Factorial is undefined for negative numbers."
+    
+    factorial_result = 1
 
+    # using a for loop to calculate the factorial
+    for i in range(1, n + 1):
+        factorial_result *= i
+
+    return factorial_result
+
+# Get user input with a limit of 10
+number = int(input("Enter a non-negative number: "))
+if 0 <= number <= 10:
+    result = calculate_factorial(number)
+    print(f"The factorial of {number} is {result}")
+else: 
+    print(f"Please enter a non-negative number less than or equal to 10.")
 
 
 
