@@ -31,6 +31,18 @@ for number in range(0, 21, 2):
     print(number)
 
 # Exercise 5: Square Numbers
+# initialize a variable to store the sum
+sum_of_squares = 0    
+
+print("Exercise 5: Square numbers")
+for number in range(1,6):
+    square = number ** 2
+    print(square)
+
+    sum_of_squares += square
+
+print("Sum of the squares is: " ,sum_of_squares)
+
 
 
 # Exercise 6: Factorial
