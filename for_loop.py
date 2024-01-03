@@ -43,7 +43,7 @@ for number in range(1,6):
 
 print("Sum of the squares is: " ,sum_of_squares)
 
-print("Print the factorial of a number")
+print("Exercise 6: Print the factorial of a number")
 # Exercise 6: Factorial
 def calculate_factorial(n):
     if n < 0:
@@ -65,7 +65,8 @@ if 0 <= number <= 10:
 else: 
     print(f"Please enter a non-negative number less than or equal to 10.")
 
-print("Print the multiplication table of a number")
+
+print("Exercise 7: Print the multiplication table of a number")
 # Exercise 7: Multiplication table
 def multiplication_table(n):
     if n < 1 or n > 10:
@@ -81,7 +82,25 @@ def multiplication_table(n):
 number = int(input("Enter a number between 1 and 10: "))
 multiplication_table(number)         
 
+
+print("Exercise 8: Reserver String")
 # Exercise 8: Reverse String
+def reverse_string(input_string):
+    reversed_result = ""
+
+    # Use a for loop to reverse the string
+    for char in input_string:
+        reversed_result = char + reversed_result
+
+    return reversed_result
+
+# Get user input for the string
+user_input = input("Enter a string to reverse: ")
+
+# Reverse the string and print result
+result = reverse_string(user_input)
+print(f"The reversed string of {user_input} is: {result}")
+
 
 
 # Exercise 9: Count Vowels
