@@ -83,7 +83,7 @@ number = int(input("Enter a number between 1 and 10: "))
 multiplication_table(number)         
 
 
-print("Exercise 8: Reserver String")
+print("Exercise 8: Reverse String")
 # Exercise 8: Reverse String
 def reverse_string(input_string):
     reversed_result = ""
@@ -102,8 +102,25 @@ result = reverse_string(user_input)
 print(f"The reversed string of {user_input} is: {result}")
 
 
-
+print("Exercise 9: Count Vowels")
 # Exercise 9: Count Vowels
+def count_vowels(input_string):
+    vowel_count = 0
+
+    # Use a for loop to iterate each character in the input string
+    for char in input_string:
+        # check if the character is a vowel
+        if char.lower() in "aeiou":
+            vowel_count += 1
+
+    return vowel_count
+
+# Get user input for the string
+user_input = input("Enter a string to count vowels: ")
+
+# Count voewls in the string and print the result
+result = count_vowels(user_input)
+print(f"The number of vowels in the string is: {result}")
 
 
 # Exercise 10: Pattern Printing
