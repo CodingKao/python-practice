@@ -48,6 +48,8 @@ print("Sum of the squares is: " ,sum_of_squares)
 # Exercise 6: Factorial
 
 
+
+
 # Exercise 7: Multiplication table
 
 
