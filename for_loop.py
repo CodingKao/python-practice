@@ -43,7 +43,7 @@ for number in range(1,6):
 
 print("Sum of the squares is: " ,sum_of_squares)
 
-
+print("Print the factorial of a number")
 # Exercise 6: Factorial
 def calculate_factorial(n):
     if n < 0:
@@ -65,10 +65,21 @@ if 0 <= number <= 10:
 else: 
     print(f"Please enter a non-negative number less than or equal to 10.")
 
-
-
+print("Print the multiplication table of a number")
 # Exercise 7: Multiplication table
+def multiplication_table(n):
+    if n < 1 or n > 10:
+        return "Please enter a number between 1 and 10."
 
+    # use for loop to calculate multiplication table
+    for i in range(1, 11):
+        result = n * i
+        print(f"{n} x {i} = {result}")
+
+
+# Get user input
+number = int(input("Enter a number between 1 and 10: "))
+multiplication_table(number)         
 
 # Exercise 8: Reverse String
 
