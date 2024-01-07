@@ -122,8 +122,17 @@ user_input = input("Enter a string to count vowels: ")
 result = count_vowels(user_input)
 print(f"The number of vowels in the string is: {result}")
 
+print("Exercise 10: Star Pattern Printing")
+# Exercise 10: Star Pattern Printing
+def print_star_pattern(rows):
+    for i in range(1, rows + 1):
+        print("*" * i)
 
-# Exercise 10: Pattern Printing
+# Get user input for the number of rows
+num_rows = int(input("Enter the number of rows for the stars: "))
+
+# Print the star pattern
+print_star_pattern(num_rows)
 
 
 # Exercise 11: Sum of squares
