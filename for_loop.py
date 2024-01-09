@@ -153,4 +153,21 @@ else:
     count_down(user_input)
 
 
+print("Exercise 12: Find average in list")
 
+# Get input from user as a string, then convert to a list of numbers
+user_input = input("Please enter a list of numbers separated by spaces: ")
+user_numbers = [int(num) for num in user_input.split()]
+
+# Initialize a variable to sum all the numbers
+sum_result = 0
+
+for num in user_numbers:
+    sum_result += num
+
+# Calculate the average
+if len(user_numbers) > 0:
+    average = sum_result / len(user_numbers)
+    print(f"The average of your numbers is: {average}")
+else:
+    print("Please enter at least one number.")
