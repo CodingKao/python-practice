@@ -134,10 +134,23 @@ num_rows = int(input("Enter the number of rows for the stars: "))
 # Print the star pattern
 print_star_pattern(num_rows)
 
-
+print("Exercise 11: Count down")
 # Exercise 11: Sum of squares
+def count_down(counter):
+    for i in range(counter, 0, -1):
+        print(i)
 
-
+# Ask user for input limit of 50
+user_input = int(input("Enter a number for the countdown (limit 50): "))
+    
+# Check the user input
+if user_input == 0:
+    print("Enter a higher number for the countdown.")
+elif user_input > 50:
+    print("Enter a lower number for the countdown.")
+else:
+    # Print the countdown
+    count_down(user_input)
 
 
 
