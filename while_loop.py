@@ -3,7 +3,7 @@
 
 print("Exercise 1: Count up")
 def count_up(number):
-    count =1 
+    count = 1
     while count <= number:
         print(count)
         count += 1
@@ -14,3 +14,16 @@ user_number = int(user_input)
 
 # print result
 count_up(user_number)
+
+print("Exercise 2: Count down")
+def count_down(start, stop):
+    while start >= stop:
+        print(start)
+        start -= 1
+
+# Get user input
+start = int(input("Enter the starting number: "))
+stop = int(input("Enter the stop number: "))
+
+# Print result
+count_down(start, stop)
