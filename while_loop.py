@@ -27,3 +27,16 @@ stop = int(input("Enter the stop number: "))
 
 # Print result
 count_down(start, stop)
+
+print("Exercise 3: Repeat number")
+
+# get user input
+user_number = int(input("Enter a number to repeat: "))
+repetition = int(input("Enter the number of times to repeat: "))
+
+count = 0
+
+while count < repetition:
+    print(user_number)
+    count += 1
+
