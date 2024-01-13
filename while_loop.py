@@ -34,6 +34,7 @@ print("Exercise 3: Repeat number")
 user_number = int(input("Enter a number to repeat: "))
 repetition = int(input("Enter the number of times to repeat: "))
 
+# set the counter
 count = 0
 
 while count < repetition:
