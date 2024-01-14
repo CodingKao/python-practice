@@ -92,4 +92,6 @@ while user_guess != correct_password:
 
 # If user guess correctly, loop ends
 print("Congratulations!  You've guessed the correct password. ")
-                   
+                
+
+print("Exercise 7: Fizz Buzz")
