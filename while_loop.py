@@ -41,3 +41,21 @@ while count < repetition:
     print(user_number)
     count += 1
 
+
+print("Exercise 4: Print even numbers")
+# get user input
+start_number = int(input("Enter the starting number: "))
+end_number = int(input("Enter the ending number: "))
+
+# validate the numbers are within parameters
+while end_number < start_number:
+    print("Ending number should be greater than or equal to the starting number")
+    end_number = int(input("Enter the ending number: "))
+
+# print even numbers using a while loop
+current_number = start_number
+
+while current_number <= end_number:
+    if current_number % 2 == 0:
+        print(current_number)
+    current_number += 1
