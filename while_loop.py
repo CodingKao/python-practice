@@ -78,5 +78,18 @@ while current_number <= end_number:
         print(current_number)
     current_number += 1
 
+print("Exercise 6: Guess the Password")
+# Set the correct password first
+correct_password = "secret123"
 
+# Ask user to guess the password
+user_guess = input("Guess the Password: ")
+
+# Use while loop to keep prompting until the correct password is guessed
+while user_guess != correct_password:
+    print("Incorrect password.  Try again.")
+    user_guess = input("Guess the password: ")
+
+# If user guess correctly, loop ends
+print("Congratulations!  You've guessed the correct password. ")
                    
