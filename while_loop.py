@@ -95,3 +95,29 @@ print("Congratulations!  You've guessed the correct password. ")
                 
 
 print("Exercise 7: Fizz Buzz")
+# Ask the user to enter an umber below 50
+user_number = int(input("Enter a number below 50: "))
+
+# Set the initial number
+number = 1
+
+# Use while loop to iterate up tot he user's entered number
+while number <= user_number:
+    # check for multiples of both 3 and 5
+    if number % 3 == 0 and number % 5 ==0:
+        print("FizzBuzz")
+    
+    # check for multiple of 3
+    elif number % 3 == 0:
+        print("Fizz")
+
+    # check for multiples of 5
+    elif number % 5 == 0:
+        print("Buzz")
+
+    # Print the number if not a multiple of 3 or 5
+    else:
+        print(number)
+
+    # increment the number for the next iteration
+    number += 1
