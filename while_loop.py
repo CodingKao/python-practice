@@ -121,3 +121,25 @@ while number <= user_number:
 
     # increment the number for the next iteration
     number += 1
+
+print("Exercise 8: Palindrome")
+def is_palindrome(word):
+    #remove spaces and convert to lowercase for case-insensitivity
+    cleaned_word = word.replace(" "," ").lower()
+
+    # check if the cleaned word is the same when reversed
+    return cleaned_word == cleaned_word[::-1]
+
+# Ask user to enter a word
+user_word = input("Enter a word: ")
+
+# Use wile loop to handle empty input
+while not user_word:
+    print("Please enter a valid word.")
+    user_word = input("Enter a word: ")
+
+# Check if the entered word is a palindrome
+if is_palindrome(user_word):
+    print(f"{user_word} is a palindrome!")
+else:
+    print(f"{user_word} is not a palindrome.")
