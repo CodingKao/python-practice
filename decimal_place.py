@@ -4,7 +4,15 @@
 def format_number(number):
     return f"{number:.2F}"
 
-#  Usage
-number = 3.16345676543
-formatted_number = format_number(number)
-print(formatted_number)
+# Ask for user input
+user_input = float(input("Enter a number with decimals: "))
+
+# Round the input to the nerest whole number
+rounded_number = round(user_input)
+
+# Format the rounded number to two decimals places
+formatted_number = format_number(user_input)
+
+# Print results
+print(f"Formatted to two decimal places: {formatted_number}")
+print(f"Round to whole number: {rounded_number}")
