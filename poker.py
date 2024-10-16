@@ -14,3 +14,13 @@ def deal_cards():
 
     # Shuffle the deck to randomize the order of the cards
     random.shuffle(deck)
+
+    # Deal the first 13 cards from the shuffled deck
+    hand = deck[:13]
+
+    # Return the 13 random cards
+    return hand
+
+# Deal 13 cards to player and print the player's hand
+player_hand = deal_cards()
+print("Player's hand", player_hand)
