@@ -16,11 +16,15 @@ def deal_cards():
     random.shuffle(deck)
 
     # Deal the first 13 cards from the shuffled deck
-    hand = deck[:13]
+    player_hand = deck[:5]
+    dealer_hand = deck[6:10]
 
     # Return the 13 random cards
-    return hand
+    return player_hand, dealer_hand
+
+# Deal 5 cards to each player and dealer
+player_hand, dealer_hand = deal_cards()
 
 # Deal 13 cards to player and print the player's hand
-player_hand = deal_cards()
-print("Player's hand", player_hand)
+print("Player's hand:", player_hand)
+print("Dealer's hand:", dealer_hand)
