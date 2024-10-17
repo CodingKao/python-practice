@@ -2,6 +2,7 @@
 
 # Import 'random' function
 import random
+from collections import Counter
 
 # Function to generate 13 random cards from a standard deck
 def deal_cards():
