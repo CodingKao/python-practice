@@ -4,6 +4,20 @@
 import random
 from collections import Counter
 
+# Define the poker hand ranking
+poker_hand_rankings = {
+    "Royal Flush": 10,
+    "Straight Flush": 9,
+    "Four of a Kind": 8,
+    "Full House": 7,
+    "Flush": 6,
+    "Straight": 5,
+    "Three of a Kind": 4,
+    "Two Pair": 3,
+    "One Pair": 2,
+    "High Card": 1
+}
+
 # Function to generate 13 random cards from a standard deck
 def deal_cards():
     # Define the suits and ranks in a deck of cards
