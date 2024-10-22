@@ -37,6 +37,16 @@ def deal_cards():
     # Return the 13 random cards
     return player_hand, dealer_hand
 
+# Function to extract rank and suit information from the hand
+def extract_ranks_and_suits(hand):
+    ranks = []
+    suits = []
+    for card in hand:
+        rank, suit = card.split(' of ')
+        ranks.append(rank)
+        suits.append(suit)
+    return ranks, suits
+
 # Deal 5 cards to each player and dealer
 player_hand, dealer_hand = deal_cards()
 
