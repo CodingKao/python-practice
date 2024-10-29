@@ -47,6 +47,19 @@ def extract_ranks_and_suits(hand):
         suits.append(suit)
     return ranks, suits
 
+# Function to convert ranks to numberic values for comparison
+def rank_to_value(rank):
+    if rank.isdigit():
+        return int(rank)
+    elif rank == "Jack":
+        return 11
+    elif rank == "Queen":
+        return 12
+    elif rank == "King":
+        return 13
+    elif rank == "Ace":
+        return 14
+
 # Deal 5 cards to each player and dealer
 player_hand, dealer_hand = deal_cards()
 
