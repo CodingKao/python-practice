@@ -60,6 +60,11 @@ def rank_to_value(rank):
     elif rank == "Ace":
         return 14
 
+# Function to determine the best poker hand a player has
+def determine_hand_rank(hand):
+    ranks, suits = extract_ranks_and_suits(hand)
+    rank_values = sorted([rank_to_value(rank) for rank in ranks])
+
 # Deal 5 cards to each player and dealer
 player_hand, dealer_hand = deal_cards()
 
