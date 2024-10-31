@@ -68,6 +68,9 @@ def determine_hand_rank(hand):
     # Check for flush
     flush = len(set(suits)) == 1
 
+    # Check for Straight
+    straight = all(rank_values[i] - rank_values[i-1] == 1 for i in range (1, len(rank_values)))
+
 # Deal 5 cards to each player and dealer
 player_hand, dealer_hand = deal_cards()
 
