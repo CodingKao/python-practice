@@ -18,23 +18,18 @@ poker_hand_rankings = {
     "High Card": 1
 }
 
-# Function to generate 13 random cards from a standard deck
-def deal_cards():
+# Function to generate a full deck of cards
+def dgenerate_deck():
     # Define the suits and ranks in a deck of cards
     suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades',]
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace' ]
 
     # Generate a full deck of 52 cards by combining each rank with each suit
-    deck = [f"{rank} of {suit}" for suit in suits for rank in ranks]
+    return [f"{rank} of {suit}" for suit in suits for rank in ranks]
 
-    # Shuffle the deck to randomize the order of the cards
-    random.shuffle(deck)
+# Function to deal cards
+def deal_cards():
 
-    # Deal the first 13 cards from the shuffled deck
-    player_hand = deck[:5]
-    dealer_hand = deck[6:10]
-
-    # Return the 13 random cards
     return player_hand, dealer_hand
 
 # Function to extract rank and suit information from the hand
