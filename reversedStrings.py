@@ -12,3 +12,22 @@ def solution(string):
 
 # Print reversed string back to user
 print(solution(string))
+
+# Enter a sentence
+sentence = input("Enter a sentence: ") 
+
+# Define the function
+def solution(sentence):
+    #Split the sentence into words
+    words = sentence.split()
+
+    # Reverse the list of words
+    reversed_words = words[::-1]
+
+    # Join the reversed words back into a string
+    reversed_sentence = ' '.join(reversed_words)
+
+    return reversed_sentence
+
+# Print the revesed string back to the user
+print(solution(sentence))
