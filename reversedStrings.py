@@ -31,3 +31,20 @@ def solution(sentence):
 
 # Print the revesed string back to the user
 print(solution(sentence))
+
+# Reverse number
+# Ask the user to input a series of numbers
+numbers = input("Enter a series of numbers: ")
+
+def reverse_numbers():
+    # Split the input into a list of numbers (as strings)
+    number_list = numbers.split()
+
+    # Reverse the digits of each number in the list
+    reversed_numbers = [num[::-1] for num in number_list]
+
+    # Join the reversed numbers into a string with spaces
+    return ' '.join(reversed_numbers)
+
+# Call the function and print the reversed numbers
+print("Reversed numbers:", reverse_numbers())
