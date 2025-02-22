@@ -5,3 +5,7 @@ num_hearts = int(input("How many hearts do you want?"))
 
 # Print the heart symbol the sepcified number of tiems
 print("❤️  " * num_hearts)
+
+# Print the heart vertically
+for _ in range(num_hearts):
+    print("❤️")
