@@ -12,6 +12,4 @@ operating_expenses = float(input("Enter total opearting expenses ($): "))
 noi = gross_income - operating_expenses
 
 # print result
-print("\nNet Opearting Income (NOI):  $" + str(roun100d(noi,2)))
-
-
+print("\nNet Opearting Income (NOI):  $" + str(round(noi,2)))
